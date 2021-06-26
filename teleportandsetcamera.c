@@ -25,7 +25,6 @@ struct MarioHolder {
 	struct MarioActor *Player2;
 };
 
-extern struct MarioHolder *getMarioHolder__2MRFv(void);
 extern void FUN_803C1BE0(struct MarioActor *mario);
 extern void doPointWarpRecovery(void *mariototeleport, struct position *pos, void *unk);
 extern int **getWPad__2MRFl(int wiimoteno);
