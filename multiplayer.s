@@ -69,7 +69,7 @@ li	3, 0
 b	getPlayerStickY__2MRFv
 
 
-/* Player 2 detection */
+/* Save pointer to player that triggered collision */
 
 collisionbackupplayerpointer:
 lis	3, 0x8000

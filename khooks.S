@@ -237,9 +237,7 @@ _kHook33:
 .long remapjoystickyother
 
 
-/*
- * New size of the MarioActor class.
- */
+/* New size of the MarioActor class. */
 _kHook34:
 .long 0x3
 .long 0x1
@@ -247,9 +245,7 @@ _kHook34:
 .int 0x8033BB14
 li 3, 0x109A
 
-/*
- * New size of the MarioHolder class.
- */
+/* New size of the MarioHolder class. */
 _kHook35:
 .long 0x3
 .long 0x1
