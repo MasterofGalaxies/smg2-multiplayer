@@ -1,6 +1,8 @@
 #include <stddef.h>
 #include <stdbool.h>
 
+#include "multiplayer.h"
+
 struct position {
 	float x;
 	float y;
@@ -50,7 +52,7 @@ void handleteleportandcamera(struct MarioActor *thismario) {
 #ifdef BUBBLE
 				doPointWarpRecovery(thismario->doPointWarpPointer,
 				                    &(othermario->pos),
-				                    (void *)0x80002C40 /* don't know what this is, so just point it to empty memory and it won't crash */);
+				                    (void *)0x80000000 + EMPTYMEM + 0x20 /* don't know what this is, so just point it to empty memory and it won't crash */);
 #else
 				thismario->pos.x = othermario->pos.x;
 				thismario->pos.y = othermario->pos.y;

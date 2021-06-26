@@ -1,6 +1,6 @@
-.section .kamek
+#include "multiplayer.h"
 
-.set emptymem, 0x2C34
+.section .kamek
 
 
 /* Spawn one Mario and one Luigi */
@@ -289,7 +289,7 @@ _kHook39:
 .long 0x1
 .long 0x2
 .int 0x803B5A90
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoHopper */
 _kHook40:
@@ -304,7 +304,7 @@ _kHook41:
 .long 0x1
 .long 0x2
 .int 0x803B6E0C
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoBee */
 _kHook42:
@@ -319,7 +319,7 @@ _kHook43:
 .long 0x1
 .long 0x2
 .int 0x803B6E28
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoTeresa */
 _kHook44:
@@ -334,7 +334,7 @@ _kHook45:
 .long 0x1
 .long 0x2
 .int 0x803B6E44
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoIce */
 _kHook46:
@@ -349,7 +349,7 @@ _kHook47:
 .long 0x1
 .long 0x2
 .int 0x803B6E60
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoFire */
 _kHook48:
@@ -364,7 +364,7 @@ _kHook49:
 .long 0x1
 .long 0x2
 .int 0x803B6E7C
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemNeoFoo */
 _kHook50:
@@ -379,7 +379,7 @@ _kHook51:
 .long 0x1
 .long 0x2
 .int 0x803B6E98
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* BenefitItemInvincible */
 _kHook52:
@@ -394,7 +394,7 @@ _kHook53:
 .long 0x1
 .long 0x2
 .int 0x803B6EB4
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* SpinCloudItem */
 _kHook54:
@@ -409,7 +409,7 @@ _kHook55:
 .long 0x1
 .long 0x2
 .int 0x803B7000
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* MorphItemRock */
 _kHook56:
@@ -424,7 +424,7 @@ _kHook57:
 .long 0x1
 .long 0x2
 .int 0x803B7040
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 
 /* Yoshi */
@@ -451,7 +451,7 @@ _kHook60:
 .long 0x1
 .long 0x2
 .int 0x804227B0
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 _kHook61:
 .long 0x3
@@ -465,7 +465,7 @@ _kHook62:
 .long 0x1
 .long 0x2
 .int 0x804227C4
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* Yoshi is mounted by correct player */
 
@@ -481,7 +481,7 @@ _kHook64:
 .long 0x1
 .long 0x2
 .int 0x803B6FC0
-lwz 3, emptymem (3)
+lwz 3, EMPTYMEM (3)
 
 /* SuperSpinDriver */
 
