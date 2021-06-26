@@ -261,7 +261,9 @@ _kHook36:
 .long 0x1
 #ifdef EU
 .int 0x806CCB98
-#else
+#elif defined(JP)
+.int 0x806C6C78
+#else /* US */
 .int 0x806C7498
 #endif
 .long handleteleportandcamera

@@ -20,6 +20,9 @@ endif
 ifneq ($(PAL),)
 	DEFINES += -DEU
 endif
+ifneq ($(JP),)
+	DEFINES += -DJP
+endif
 
 all: multiplayerpatch.xml
 
