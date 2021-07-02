@@ -5,6 +5,7 @@ getPlayerStickX__2MRFv=0x8002AC10
 getPlayerStickY__2MRFv=0x8002ACF0
 getSceneObjHolder__2MRFv=0x8045A970
 getWPad__2MRFl=0x804CFC50
+GXSetViewport=0x805D0820
 initPlacementMario__15StageDataHolderFv=0x8045C2F0
 isPlayerLuigi__2MRFv=0x80023950
 isStageFileSelect__2MRFv=0x80056830

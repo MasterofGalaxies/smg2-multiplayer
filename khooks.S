@@ -850,3 +850,39 @@ _kHook113:
 .long 0x2
 .int 0x80489464
 b 0x30
+
+#ifdef SPLITSCREEN
+/* New standard screen width */
+_kHook114:
+.long 0x3
+.long 0x1
+.long 0x2
+.int 0x80058574
+li 3, 0x130
+
+/* New widescreen screen width */
+_kHook115:
+.long 0x3
+.long 0x1
+.long 0x2
+.int 0x8005857C
+li 3, 0x196
+
+_kHook116:
+.long 0x2
+.long 0x4
+.int 0x804BE6B8
+.long drawhalfscreen
+
+_kHook117:
+.long 0x2
+.long 0x4
+.int 0x800214E8
+.long drawhalfscreen
+
+_kHook118:
+.long 0x2
+.long 0x3
+.int 0x804B6AD4
+.long toggleframenumber
+#endif

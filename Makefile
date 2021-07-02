@@ -17,6 +17,11 @@ ifneq ($(BUBBLE),)
 	DEFINES += -DBUBBLE
 endif
 
+ifneq ($(SPLITSCREEN),)
+	DEFINES += -DSPLITSCREEN
+	O_FILES += splitscreen.o
+endif
+
 ifneq ($(PAL),)
 	DEFINES += -DEU
 endif
@@ -27,7 +32,7 @@ endif
 all: multiplayerpatch.xml
 
 clean:
-	rm -f $(O_FILES) multiplayerpatch.o multiplayerpatch.xml
+	rm -f $(O_FILES) splitscreen.o multiplayerpatch.o multiplayerpatch.xml
 
 
 %.o: %.s
