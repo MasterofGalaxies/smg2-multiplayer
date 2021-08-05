@@ -12,6 +12,18 @@ fadds	1, 1, 3
 leftscreen:
 b	GXSetViewport
 
+drawhalfscreen_scissor:
+srawi	5, 5, 1
+addze	5, 5
+lis	8, 0x8000
+lbz	8, EMPTYMEM + 6 (8)
+cmpwi	8, 0
+beq-	leftscreen_scissor
+add	3, 3, 5
+leftscreen_scissor:
+lwz	8, 0x3B00 (2) /* instruction that got overwritten by our branch */
+b	GXSetScissor + 4
+
 toggleframenumber:
 lis	3, 0x8000
 lbzu	4, EMPTYMEM + 6 (3)

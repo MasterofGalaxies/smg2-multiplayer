@@ -883,6 +883,12 @@ _kHook117:
 _kHook118:
 .long 0x2
 .long 0x3
+.int 0x805D08A0
+.long drawhalfscreen_scissor
+
+_kHook119:
+.long 0x2
+.long 0x3
 .int 0x804B6AD4
 .long toggleframenumber
 #endif
