@@ -22,6 +22,9 @@ ifneq ($(SPLITSCREEN),)
 	O_FILES += splitscreen.o
 endif
 
+ifneq ($(EU),)
+	DEFINES += -DEU
+endif
 ifneq ($(PAL),)
 	DEFINES += -DEU
 endif
