@@ -4,7 +4,7 @@ bne-	twoargs1
 mr	4, 3
 twoargs1:
 lwz	5, 0x90 (30)
-b	FUN_803B6210
+b	changeAnimationE__11MarioAccessFPCcPCc
 
 
 otherlaunchstar:
@@ -27,7 +27,7 @@ lwz	30, 0x8 (1)
 lwz	0, 0x14 (1)
 mtlr	0
 addi	1, 1, 0x10
-b	FUN_803B6210
+b	changeAnimationE__11MarioAccessFPCcPCc
 
 
 simplelaunchstar:

@@ -1,3 +1,4 @@
+changeAnimationE__11MarioAccessFPCcPCc=0x803B6210
 control__10MarioActorFv=0x803C1BE0
 doPointWarpRecovery=0x803B0CD0
 getObj__14SceneObjHolderCFi=0x80459A00
@@ -12,7 +13,6 @@ initPlacementMario__15StageDataHolderFv=0x8045C2F0
 isPlayerLuigi__2MRFv=0x80023950
 isStageFileSelect__2MRFv=0x80056830
 isStageWorldMap__2MRFv=0x80056A30
-FUN_803B6210=0x803B6210
 LAB_8004F658=0x8004F658
 LAB_803B787C=0x803B787C
 LAB_803B7ABC=0x803B7ABC
