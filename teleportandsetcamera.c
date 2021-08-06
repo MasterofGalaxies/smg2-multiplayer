@@ -27,7 +27,7 @@ struct MarioHolder {
 	struct MarioActor *Player2;
 };
 
-extern void FUN_803C1BE0(struct MarioActor *mario);
+extern void control__10MarioActorFv(struct MarioActor *mario);
 extern void doPointWarpRecovery(void *mariototeleport, struct position *pos, void *unk);
 extern int **getWPad__2MRFl(int wiimoteno);
 extern char *getSceneObjHolder__2MRFv(void);
@@ -73,5 +73,5 @@ void handleteleportandcamera(struct MarioActor *thismario) {
 		}
 	}
 
-	FUN_803C1BE0(thismario);
+	control__10MarioActorFv(thismario);
 }
