@@ -11,7 +11,9 @@ ADDRESS ?= 0x80002A00
 
 O_FILES = multiplayer.o teleportandsetcamera.o SuperSpinDriver.o khooks.o
 
-SYMBOL_MAP ?= symbols.txt
+REGION ?= us
+SYMBOL_MAP ?= symbols-$(REGION).txt
+DEFINES += -D$(REGION)
 
 ifneq ($(BUBBLE),)
 	DEFINES += -DBUBBLE
@@ -20,16 +22,6 @@ endif
 ifneq ($(SPLITSCREEN),)
 	DEFINES += -DSPLITSCREEN
 	O_FILES += splitscreen.o
-endif
-
-ifneq ($(EU),)
-	DEFINES += -DEU
-endif
-ifneq ($(PAL),)
-	DEFINES += -DEU
-endif
-ifneq ($(JP),)
-	DEFINES += -DJP
 endif
 
 all: multiplayerpatch.xml

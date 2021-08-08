@@ -24,7 +24,7 @@ lbz	0, EMPTYMEM + 5 (3)
 xori	0, 0, 1
 sth	0, EMPTYMEM + 4 (3)
 mr	3, 31
-b	LAB_8045B90C
+b	initPlacement__15StageDataHolderFv + 0x1C
 
 
 marioorluigi:
@@ -32,7 +32,7 @@ lis	3, 0x8000
 lhz	0, EMPTYMEM + 4 (3)
 sth	0, 0x1098 (29)
 stb	0, -0x24F0 (13)
-b	LAB_803B787C
+b	init__10MarioActorFRC12JMapInfoIter + 0x5C
 
 
 setmarioandluigiplayeractor:
@@ -41,10 +41,10 @@ lbz	0, EMPTYMEM + 4 (12)
 cmpwi	0, 0x1
 beq-	playertwo
 stw	4, 0x14 (3)
-b	LAB_803B7ABC
+b	init__10MarioActorFRC12JMapInfoIter + 0x29C
 playertwo:
 stw	4, 0x28 (3)
-b	LAB_803B7ABC
+b	init__10MarioActorFRC12JMapInfoIter + 0x29C
 
 
 /* Remap controls */
@@ -75,4 +75,4 @@ collisionbackupplayerpointer:
 lis	3, 0x8000
 stw	28, EMPTYMEM (3)
 lbz	0, 0xE3C (28)
-b	LAB_803CC068
+b	FUN_803CBDE0 + 0x288

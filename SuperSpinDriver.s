@@ -35,4 +35,4 @@ bl	getPlayerActor__11MarioAccessFv
 mr	5, 3
 mr	3, 31
 mr	4, 31
-b	LAB_8004F658
+b	FUN_8004F640 + 0x18

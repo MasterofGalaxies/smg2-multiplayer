@@ -21,7 +21,12 @@ cmpwi	8, 0
 beq-	leftscreen_scissor
 add	3, 3, 5
 leftscreen_scissor:
-lwz	8, 0x3B00 (2) /* instruction that got overwritten by our branch */
+/* instruction that got overwritten by our branch */
+#if defined(as) || defined(kr)
+lwz	8, 0x3B10 (2)
+#else
+lwz	8, 0x3B00 (2)
+#endif
 b	GXSetScissor + 4
 
 toggleframenumber:
