@@ -24,10 +24,10 @@ ifneq ($(SPLITSCREEN),)
 	O_FILES += splitscreen.o
 endif
 
-all: multiplayerpatch.xml
+all: multiplayerpatch.xml multiplayerpatch.ini
 
 clean:
-	rm -f $(O_FILES) splitscreen.o multiplayerpatch.o multiplayerpatch.xml
+	rm -f $(O_FILES) splitscreen.o multiplayerpatch.o multiplayerpatch.xml multiplayerpatch.ini
 
 
 %.o: %.s
@@ -46,3 +46,6 @@ multiplayerpatch.o: $(O_FILES)
 
 multiplayerpatch.xml: multiplayerpatch.o
 	$(KAMEK) -static=$(ADDRESS) -externals=$(SYMBOL_MAP) -output-riiv=$@ $<
+
+multiplayerpatch.ini: multiplayerpatch.o
+	$(KAMEK) -static=$(ADDRESS) -externals=$(SYMBOL_MAP) -output-dolphin=$@ $<
